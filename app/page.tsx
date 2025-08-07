@@ -1,15 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { BudgeSection } from "@/modules/budget/components/section/budge-section";
+import { ProductCardList } from "@/modules/products/components/list/product-card-list";
 
 function HomePage() {
 	return (
-		<main>
-			<h1>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugit
-				dolor consequatur ducimus necessitatibus perspiciatis id. Ab quisquam
-				possimus voluptatum, assumenda ea ratione soluta in nemo! Soluta beatae
-				eaque nesciunt.
-			</h1>
-			<Button>Lorem</Button>
+		<main className="grid px-4 py-8 sm:px-8 sm:py-12">
+			<BudgeSection />
+			<ProductCardList />
 		</main>
 	);
 }
