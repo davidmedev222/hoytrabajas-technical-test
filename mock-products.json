@@ -1,92 +1,92 @@
 [
 	{
 		"id": "prod_001",
-		"name": "Auriculares Bluetooth Sony WH-CH520",
-		"description": "Auriculares inalámbricos con hasta 50 horas de batería y compatibilidad con asistente de voz.",
+		"name": "Refresco Natural de Naranja",
+		"description": "Bebida refrescante de naranja natural sin azúcares añadidos, perfecta para acompañar tus comidas.",
 		"price": 85,
 		"image": "/assets/bebida.png"
 	},
 	{
 		"id": "prod_002",
-		"name": "Zapatillas Adidas Runfalcon 3",
-		"description": "Zapatillas deportivas para entrenamiento diario con amortiguación liviana y suela de goma duradera.",
+		"name": "Bocadillos Mixtos Gourmet",
+		"description": "Selección de bocadillos artesanales con jamón serrano, queso manchego y vegetales frescos.",
 		"price": 72,
 		"image": "/assets/bocadillos.jpeg"
 	},
 	{
 		"id": "prod_003",
-		"name": "Monitor Samsung 24'' Full HD",
-		"description": "Monitor LED con panel VA, resolución Full HD y tecnología Eye Saver para reducir la fatiga visual.",
+		"name": "Cupcake de Vainilla Premium",
+		"description": "Delicioso cupcake esponjoso de vainilla con frosting cremoso y decoración artesanal.",
 		"price": 199,
 		"image": "/assets/cupcake.png"
 	},
 	{
 		"id": "prod_004",
-		"name": "Notebook HP 245 G8 Ryzen 5",
-		"description": "Laptop de 14 pulgadas con procesador AMD Ryzen 5, 8GB RAM y SSD de 256GB.",
+		"name": "Desayuno Continental Completo",
+		"description": "Bandeja de desayuno con croissants, mermeladas caseras, frutas frescas y café premium.",
 		"price": 749,
 		"image": "/assets/desayuno-merienda.png"
 	},
 	{
 		"id": "prod_005",
-		"name": "Smartwatch Amazfit GTS 4 Mini",
-		"description": "Reloj inteligente con pantalla AMOLED, 120 modos deportivos y monitoreo de salud 24/7.",
+		"name": "Macarons Franceses Surtidos",
+		"description": "Caja de 12 macarons artesanales en sabores variados: frambuesa, chocolate, vainilla y pistacho.",
 		"price": 139,
 		"image": "/assets/macarrons.png"
 	},
 	{
 		"id": "prod_006",
-		"name": "Teclado Logitech K380 Bluetooth",
-		"description": "Teclado compacto multidispositivo compatible con Windows, macOS, Android y iOS.",
+		"name": "Compota de Pera Casera",
+		"description": "Compota de pera natural endulzada con miel, libre de conservantes y perfecta para postres.",
 		"price": 59,
 		"image": "/assets/pera-compota.png"
 	},
 	{
 		"id": "prod_007",
-		"name": "Silla Gamer Cougar Armor One",
-		"description": "Silla ergonómica con diseño deportivo, soporte lumbar y ajuste reclinable.",
+		"name": "Peras Orgánicas Frescas",
+		"description": "Peras Williams orgánicas de primera calidad, dulces y jugosas, cosechadas en temporada.",
 		"price": 229,
 		"image": "/assets/peras.png"
 	},
 	{
 		"id": "prod_008",
-		"name": "Cafetera Nespresso Essenza Mini",
-		"description": "Cafetera compacta con sistema de cápsulas Nespresso y apagado automático.",
+		"name": "Pizza Margherita Artesanal",
+		"description": "Pizza tradicional italiana con salsa de tomate casera, mozzarella fresca y albahaca aromática.",
 		"price": 179,
 		"image": "/assets/pizza.jpeg"
 	},
 	{
 		"id": "prod_009",
-		"name": "Licuadora Oster Clásica 3 velocidades",
-		"description": "Licuadora de vidrio con 3 velocidades, motor potente y cuchilla de acero inoxidable.",
+		"name": "Tarta de Chocolate y Frambuesa",
+		"description": "Exquisita tarta de chocolate belga con mousse suave y frambuesas frescas de temporada.",
 		"price": 110,
 		"image": "/assets/postre.png"
 	},
 	{
 		"id": "prod_010",
-		"name": "Mouse Logitech M350 Pebble",
-		"description": "Mouse inalámbrico silencioso, compacto y compatible con múltiples sistemas operativos.",
+		"name": "Hamburguesa Gourmet BBQ",
+		"description": "Hamburguesa premium con carne angus, queso cheddar, cebolla caramelizada y salsa BBQ especial.",
 		"price": 34,
 		"image": "/assets/hamburguesa.jpeg"
 	},
 	{
 		"id": "prod_011",
-		"name": "Mochila UrbanStyle Pro 25L",
-		"description": "Mochila resistente al agua, con compartimento para notebook de hasta 15.6''.",
+		"name": "Empanadas Criollas Caseras",
+		"description": "Empanadas tradicionales rellenas de carne cortada a cuchillo, cebolla, huevo y aceitunas.",
 		"price": 48,
 		"image": "/assets/empanadas.jpg"
 	},
 	{
 		"id": "prod_012",
-		"name": "Parlante JBL Flip 6",
-		"description": "Altavoz Bluetooth portátil con sonido potente y resistencia al agua IP67.",
+		"name": "Entrada de Salmón Ahumado",
+		"description": "Delicada entrada con salmón ahumado, alcaparras, cebolla morada y crema de eneldo.",
 		"price": 145,
 		"image": "/assets/entrada.png"
 	},
 	{
 		"id": "prod_013",
-		"name": "Impresora HP Ink Advantage 2775",
-		"description": "Multifunción con Wi-Fi, impresión desde celular y escáner integrado.",
+		"name": "Paella Valenciana Tradicional",
+		"description": "Auténtica paella valenciana con arroz bomba, pollo, conejo, judías verdes y azafrán.",
 		"price": 109,
 		"image": "/assets/plato-principal.png"
 	}
