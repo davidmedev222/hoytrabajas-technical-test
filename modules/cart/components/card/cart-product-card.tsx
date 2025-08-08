@@ -3,6 +3,7 @@ import type { Product } from "@/models/product.model";
 import { RemoveFromCartButton } from "@/modules/cart/components/button/remove-from-cart-button";
 
 interface CartProductCardProps {
+	/** Product object containing id, name, description, price, and image */
 	product: Product;
 }
 

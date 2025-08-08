@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import z from "zod";
 import { ApiError } from "./api.error";
 
+/**
+ * Constructs the API base URL based on environment configuration
+ * @returns Formatted API URL without trailing slash
+ */
 export function getApiUrl() {
 	const url = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/v1";
 
@@ -9,6 +13,19 @@ export function getApiUrl() {
 	return formattedUrl;
 }
 
+/**
+ * Standardizes error handling for API routes by converting various error types to NextResponse
+ * @param error - Error object that can be ZodError, ApiError, Error, or unknown
+ * @returns NextResponse with appropriate status code and error format
+ * @example
+ * ```ts
+ * try {
+ *   // ... API logic
+ * } catch (error) {
+ *   return handleApiError(error);
+ * }
+ * ```
+ */
 export function handleApiError(error: unknown) {
 	console.error(error);
 

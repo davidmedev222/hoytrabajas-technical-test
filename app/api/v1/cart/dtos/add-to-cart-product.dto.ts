@@ -1,5 +1,9 @@
 import { z } from "zod";
 
+/**
+ * DTO schema for cart operations (add/remove products)
+ * Validates productId is a non-empty string
+ */
 export const addToCartDto = z
 	.object({
 		productId: z

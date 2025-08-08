@@ -3,6 +3,7 @@ import type { Product } from "@/models/product.model";
 import { AddToCartButton } from "@/modules/cart/components/button/add-to-cart-button";
 
 interface ProductCardProps {
+	/** Product object containing id, name, description, price, and image */
 	product: Product;
 }
 

@@ -4,6 +4,11 @@ import type { ApiResponse } from "@/lib/api/api.model";
 import type { Product } from "@/models/product.model";
 
 export const productService = {
+	/**
+	 * Fetches all available products from the API
+	 * @returns Promise resolving to array of products
+	 * @throws {ApiError} When API request fails or returns error response
+	 */
 	async getProducts(): Promise<Product[]> {
 		const response = await fetch(API_V1.PRODUCTS, {
 			method: "GET",
@@ -20,6 +25,18 @@ export const productService = {
 		return api.data;
 	},
 
+	/**
+	 * Finds optimal product combination to maximize quantity within budget using greedy algorithm
+	 * @param products - Available products to choose from
+	 * @param budget - Maximum budget constraint
+	 * @returns Array of selected products sorted by price (ascending)
+	 * @example
+	 * ```ts
+	 * const products = await productService.getProducts();
+	 * const selection = productService.findBestCombination(products, 500);
+	 * console.log(`Selected ${selection.length} products`);
+	 * ```
+	 */
 	findBestCombination(products: Product[], budget: number): Product[] {
 		const affordableProducts = products
 			.filter((product) => product.price <= budget)

@@ -5,6 +5,11 @@ import { addToCartDto } from "./dtos/add-to-cart-product.dto";
 
 export const revalidate = 0;
 
+/**
+ * GET /api/v1/cart
+ * Retrieves current shopping cart contents
+ * @returns JSON response with cart items array and success message
+ */
 export async function GET() {
 	try {
 		const cart = await cartController.getCart();
@@ -22,6 +27,12 @@ export async function GET() {
 	}
 }
 
+/**
+ * POST /api/v1/cart
+ * Adds a product to the shopping cart
+ * @param request - Request object containing productId in JSON body
+ * @returns JSON response with updated cart and success message
+ */
 export async function POST(request: Request) {
 	try {
 		const body = await request.json();
@@ -42,6 +53,12 @@ export async function POST(request: Request) {
 	}
 }
 
+/**
+ * DELETE /api/v1/cart
+ * Removes a product from the shopping cart
+ * @param request - Request object containing productId in JSON body
+ * @returns JSON response with updated cart and success message
+ */
 export async function DELETE(request: Request) {
 	try {
 		const body = await request.json();

@@ -4,6 +4,11 @@ import type { ApiResponse } from "@/lib/api/api.model";
 import type { Product } from "@/models/product.model";
 
 export const cartService = {
+	/**
+	 * Retrieves current cart items from the API
+	 * @returns Promise resolving to array of products in cart
+	 * @throws {ApiError} When API request fails or returns error response
+	 */
 	async getCart(): Promise<Product[]> {
 		const response = await fetch(API_V1.CART, {
 			method: "GET",
@@ -20,6 +25,11 @@ export const cartService = {
 		return api.data;
 	},
 
+	/**
+	 * Adds a product to the shopping cart
+	 * @param productId - Unique identifier of the product to add
+	 * @throws {ApiError} When product doesn't exist or API request fails
+	 */
 	async addProductToCart(productId: string): Promise<void> {
 		const response = await fetch(API_V1.CART, {
 			method: "POST",
@@ -38,6 +48,11 @@ export const cartService = {
 		}
 	},
 
+	/**
+	 * Removes a product from the shopping cart
+	 * @param productId - Unique identifier of the product to remove
+	 * @throws {ApiError} When product doesn't exist or API request fails
+	 */
 	async removeProductFromCart(productId: string): Promise<void> {
 		const response = await fetch(API_V1.CART, {
 			method: "DELETE",
