@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
-import "./globals.css";
 import { Header } from "@/modules/layout/header/header";
+import { RootProvider } from "./provider";
+import "./globals.css";
 
 const inter = Inter({
 	variable: "--font-inter",
+	subsets: ["latin"],
 	display: "swap",
 });
 
@@ -27,8 +29,10 @@ function RootLayout({ children }: RootLayoutProps) {
 					"flex min-h-dvh flex-col font-inter antialiased",
 				)}
 			>
-				<Header />
-				{children}
+				<RootProvider>
+					<Header />
+					{children}
+				</RootProvider>
 			</body>
 		</html>
 	);

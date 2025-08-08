@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import type { Product } from "@/models/product.model";
+import { AddToCartButton } from "@/modules/cart/components/button/add-to-cart-button";
 
 interface ProductCardProps {
 	product: Product;
@@ -22,7 +22,7 @@ function ProductCard({ product }: ProductCardProps) {
 				<p className="text-muted-foreground text-sm">{product.description}</p>
 			</header>
 			<span className="font-semibold text-xl">${product.price}</span>
-			<Button>Agregar al carrito</Button>
+			<AddToCartButton product={product} />
 		</article>
 	);
 }

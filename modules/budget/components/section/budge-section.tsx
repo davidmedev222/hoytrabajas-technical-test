@@ -13,7 +13,9 @@ function BudgeSection() {
 			</p>
 			<div className="mt-8 flex items-center gap-x-2">
 				<Input placeholder="$1.000.000" type="number" />
-				<Button type="submit">Buscar</Button>
+				<Button variant="outline" type="submit">
+					Buscar
+				</Button>
 			</div>
 		</section>
 	);

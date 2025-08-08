@@ -4,7 +4,7 @@
 		"name": "Auriculares Bluetooth Sony WH-CH520",
 		"description": "Auriculares inalámbricos con hasta 50 horas de batería y compatibilidad con asistente de voz.",
 		"price": 85,
-		"image": "/assets/bebiba.png"
+		"image": "/assets/bebida.png"
 	},
 	{
 		"id": "prod_002",
@@ -25,7 +25,7 @@
 		"name": "Notebook HP 245 G8 Ryzen 5",
 		"description": "Laptop de 14 pulgadas con procesador AMD Ryzen 5, 8GB RAM y SSD de 256GB.",
 		"price": 749,
-		"image": "desayuno-merienda.png"
+		"image": "/assets/desayuno-merienda.png"
 	},
 	{
 		"id": "prod_005",

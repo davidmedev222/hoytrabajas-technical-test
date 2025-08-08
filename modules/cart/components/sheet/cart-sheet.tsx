@@ -1,4 +1,3 @@
-"use client";
 import { ShoppingBagIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,15 +10,9 @@ import {
 	SheetTitle,
 	SheetTrigger,
 } from "@/components/ui/sheet";
-import type { Product } from "@/models/product.model";
 import { CartProductCardList } from "@/modules/cart/components/list/cart-product-card-list";
-import { products } from "@/modules/shared/constants/mock.const";
-
-const cart: Product[] = products;
 
 function CartSheet() {
-	const hasProducts = cart.length > 0;
-
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
@@ -29,25 +22,17 @@ function CartSheet() {
 			</SheetTrigger>
 			<SheetContent className="w-full">
 				<SheetHeader>
-					<SheetTitle>
-						{hasProducts ? "Tu carrito" : "Carrito vacío"}
-					</SheetTitle>
+					<SheetTitle>Tu carrito</SheetTitle>
 					<SheetDescription>
-						{hasProducts
-							? "Aquí puedes ver los productos que has agregado a tu carrito."
-							: "No hay productos en tu carrito. Agrega algunos para continuar."}
+						Aquí puedes ver los productos que has agregado a tu carrito.
 					</SheetDescription>
 				</SheetHeader>
-				{hasProducts && (
-					<div className="overflow-y-auto px-4">
-						<CartProductCardList />
-					</div>
-				)}
+				<div className="overflow-y-auto px-4">
+					<CartProductCardList />
+				</div>
 				<SheetFooter>
 					<SheetClose asChild>
-						<Button>
-							{hasProducts ? "Ver más productos" : "Ver productos"}
-						</Button>
+						<Button>Ver más productos</Button>
 					</SheetClose>
 				</SheetFooter>
 			</SheetContent>

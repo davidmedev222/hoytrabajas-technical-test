@@ -7,7 +7,7 @@ export const products: Product[] = [
 		description:
 			"Auriculares inalámbricos con hasta 50 horas de batería y compatibilidad con asistente de voz.",
 		price: 85,
-		image: "/assets/bebida.png",
+		image: "/assets/bebiba.png",
 	},
 	{
 		id: "prod_002",
@@ -31,7 +31,7 @@ export const products: Product[] = [
 		description:
 			"Laptop de 14 pulgadas con procesador AMD Ryzen 5, 8GB RAM y SSD de 256GB.",
 		price: 749,
-		image: "/assets/desayuno-merienda.png",
+		image: "desayuno-merienda.png",
 	},
 	{
 		id: "prod_005",
