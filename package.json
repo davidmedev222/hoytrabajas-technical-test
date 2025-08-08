@@ -10,7 +10,9 @@
 		"lint:fix": "next lint --fix && biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off --unsafe --write"
 	},
 	"dependencies": {
+		"@hookform/resolvers": "^5.2.1",
 		"@radix-ui/react-dialog": "^1.1.14",
+		"@radix-ui/react-label": "^2.1.7",
 		"@radix-ui/react-slot": "^1.2.3",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
@@ -18,6 +20,7 @@
 		"next": "15.4.6",
 		"react": "19.1.0",
 		"react-dom": "19.1.0",
+		"react-hook-form": "^7.62.0",
 		"sonner": "^2.0.7",
 		"swr": "^2.3.4",
 		"tailwind-merge": "^3.3.1",

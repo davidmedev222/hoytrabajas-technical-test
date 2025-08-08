@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { ApplyBudgetForm } from "@/modules/budget/components/form/apply-budget-form";
 
-function BudgeSection() {
+function BudgetSection() {
 	return (
 		<section className="flex min-h-96 flex-col items-center justify-center gap-y-4 text-center">
 			<h1 className="font-bold text-4xl tracking-tight">
@@ -11,14 +10,9 @@ function BudgeSection() {
 				Indicá tu presupuesto y descubrí lo que podés comprar sin pasarte del
 				límite.
 			</p>
-			<div className="mt-8 flex items-center gap-x-2">
-				<Input placeholder="$1.000.000" type="number" />
-				<Button variant="outline" type="submit">
-					Buscar
-				</Button>
-			</div>
+			<ApplyBudgetForm />
 		</section>
 	);
 }
 
-export { BudgeSection };
+export { BudgetSection };

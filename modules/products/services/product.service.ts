@@ -19,4 +19,20 @@ export const productService = {
 
 		return api.data;
 	},
+
+	findBestCombination(products: Product[], budget: number): Product[] {
+		const affordableProducts = products
+			.filter((product) => product.price <= budget)
+			.sort((a, b) => a.price - b.price);
+
+		let spent = 0;
+
+		return affordableProducts.filter((product) => {
+			if (spent + product.price <= budget) {
+				spent += product.price;
+				return true;
+			}
+			return false;
+		});
+	},
 };
